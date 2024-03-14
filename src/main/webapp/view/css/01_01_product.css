@@ -1,0 +1,116 @@
+@charset "UTF-8";
+/* 전체 css */
+body{
+	background-color : white;
+	margin: 0 auto;
+	
+}
+
+/* 메뉴 */
+#head{
+	margin: 0 auto;
+	width: 800px;
+	height: 90px;
+	background-color: #E0EeEe;
+	border-bottom: 1px solid gray;
+	border: 1px solid black;
+}
+
+/* 메인 세션 */
+#first{
+	margin: 0 auto;
+	background-color : #f5f5f5;
+	width: 800px;
+	height : 650px;
+	display: flex;
+	justify-content: space-around;
+	border: 1px solid black;
+	
+}
+.first_items{
+	background-color : #bfbfbf;
+	width: 40%;
+	height: 450px;
+	border: 1px solid black;
+	margin-top: 70px;
+}
+
+/* 메인-1 이미지 article */
+#main_img_box{
+}
+#m_img{
+	border: 1px solid black;
+	margin: 20px auto 20px;
+	width: 80%;
+	height: 300px;
+	background-color: white;
+}
+#sub_imgs{
+	width : 80%;
+	display: flex;
+	margin: auto;
+	border: 1px solid black;
+	justify-content: space-between;
+
+}
+.sub_img{
+	background-color: white;
+	width: 30%;
+	height: 70px;
+	border: 1px solid black;
+}
+/* 메인-2 정보 article */
+#main_info > div{
+	margin: 30px 0 30px;
+	background-color: white;
+	
+}
+#o_btn{
+	display : flex;
+	justify-content: center;
+	justify-content: space-evenly;
+	font-size: 15px;
+}
+#sum_box{
+	width:100%;
+	display : flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	justify-content: space-evenly;
+	text-align: center;
+	font-size: 15px;
+}
+#sum_price{
+	width: 30%;
+}
+#sum_icon{
+	width: 10%;
+}
+#sum_num{
+	width: 30%;
+}
+#sum{
+	width: 100%;
+	text-align: right;
+}
+#pick_box{
+	width:100%;
+	display : flex;
+	text-align: center;
+}
+#wish{
+	width: 20%;
+}
+#pick{
+	width: 80%;
+}
+#sell_btn{
+	width: 100%;
+	text-align: center;
+}
+
+
+
+
+
+
