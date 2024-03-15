@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+#fourth{
+	margin: 0 auto;
+	background-color : #f5f5f5;
+	width: 1000px;
+	height : 650px;
+	border: 1px solid black;
+}
+#fourth img{
+	width: 100%;
+	height: 100%;
+	object-fit : contain;	
+}
+#fourth > p{
+  text-align: center;
+  font-weight: bold;
+}
+#rec_view{
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	border: 1px solid black;
+	margin: 0 auto;
+}
+#rec_view > div{
+	border: 1px solid black;
+	margin: 10px;
+	width: 45%;
+	height: 200px;
+}
+
