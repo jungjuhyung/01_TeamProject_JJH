@@ -7,15 +7,6 @@
 	height : 650px;
 	border: 1px solid black;
 }
-#fourth img{
-	width: 100%;
-	height: 100%;
-	object-fit : contain;	
-}
-#fourth > p{
-  text-align: center;
-  font-weight: bold;
-}
 #rec_view{
 	width: 90%;
 	display: flex;
@@ -23,6 +14,15 @@
 	flex-wrap: wrap;
 	border: 1px solid black;
 	margin: 0 auto;
+}
+#fourth > p{
+  text-align: center;
+  font-weight: bold;
+}
+#fourth img{
+	width: 100%;
+	height: 100%;
+	object-fit : contain;	
 }
 #rec_view > div{
 	border: 1px solid black;

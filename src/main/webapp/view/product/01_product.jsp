@@ -11,6 +11,7 @@
 <link href="../css/01_03_recent.css" rel="stylesheet">
 <link href="../css/01_04_simreview.css" rel="stylesheet">
 <link href="../css/01_05_etc.css" rel="stylesheet">
+<link href="../css/01_06_eximg.css" rel="stylesheet">
 </head>
 <body>
 <%-- 메뉴 --%>
@@ -178,7 +179,22 @@
 		</tr>
 	</table>
 </section>
-
+<section id ="six">
+	<article id="simg_box">
+		<div id="simg_1"><img src="../testimg/siximg1.png"></div>
+		<div id="simg_2"><img src="../testimg/siximg2.png"></div>
+		<div class="stext_box" id="stext_box_1">
+			<p>
+				몸에 좋고 맛도 좋고 안정되는 뭔가 그런 향기
+			</p>
+		</div>
+		<div class="stext_box" id="stext_box_2">
+			<p>
+				몸에 좋고 맛도 좋고 안정되는 뭔가 그런 향기
+			</p>
+		</div>
+	</article>
+</section>
 
 
 
