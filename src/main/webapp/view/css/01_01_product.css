@@ -12,12 +12,13 @@ body{
 }
 /* 메뉴 */
 #head{
-	width: 100%;
+	width: 1000px;
 	height: 90px;
 	position: relative;
 	background-color: #E0EeEe;
 	border-bottom: 1px solid gray;
 	border: 1px solid black;
+	margin: 0 auto;
 }
 
 /* 메인 세션 */
@@ -40,8 +41,6 @@ body{
 }
 
 /* 메인-1 이미지 article */
-#first #main_img_box{
-}
 #first #m_img{
 	border: 1px solid black;
 	margin: 20px auto 20px;
@@ -64,56 +63,34 @@ body{
 	border: 1px solid black;
 }
 /* 메인-2 정보 article */
-#first #main_info > div{
-	margin: 30px 0 30px;
-	background-color: white;
-	
+#info{
+	margin-top: 30px;
 }
-#o_btn{
-	display : flex;
-	justify-content: center;
-	justify-content: space-evenly;
-	font-size: 15px;
+#info p:nth-of-type(1){
+	font-size: 25px;
+	margin-bottom: 20px;
 }
-#first #sum_box{
-	width:100%;
-	display : flex;
-	flex-wrap: wrap;
-	justify-content: center;
-	justify-content: space-evenly;
-	text-align: center;
-	font-size: 15px;
+#info p:nth-of-type(2){
+	font-size: 20px;
+	margin-bottom: 20px;
 }
-#first #sum_price{
+#info p:nth-of-type(3){
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+#p_btn{
+	display: flex;
+}
+#p_btns{
+	display: flex;
+}
+#num_btn{
 	width: 30%;
+	display: flex;
 }
-#first #sum_icon{
-	width: 10%;
+#num_btn button{
+	display: flex;
 }
-#first #sum_num{
-	width: 30%;
-}
-#first #sum{
-	width: 100%;
-	text-align: right;
-}
-#first #pick_box{
-	width:100%;
-	display : flex;
-	text-align: center;
-}
-#first #wish{
-	width: 20%;
-}
-#first #pick{
-	width: 80%;
-}
-
-#first #sell_btn{
-	width: 100%;
-	text-align: center;
-}
-
 
 
 

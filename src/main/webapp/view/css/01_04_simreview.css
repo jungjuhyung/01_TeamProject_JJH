@@ -7,7 +7,7 @@
 	height : 650px;
 	border: 1px solid black;
 }
-#rec_view{
+#fourth #rec_view{
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
@@ -24,7 +24,7 @@
 	height: 100%;
 	object-fit : contain;	
 }
-#rec_view > div{
+#fourth #rec_view > div{
 	border: 1px solid black;
 	margin: 10px;
 	width: 45%;

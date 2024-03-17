@@ -12,6 +12,9 @@
 <link href="../css/01_04_simreview.css" rel="stylesheet">
 <link href="../css/01_05_etc.css" rel="stylesheet">
 <link href="../css/01_06_eximg.css" rel="stylesheet">
+<link href="../css/01_07_extext.css" rel="stylesheet">
+<link href="../css/01_08_totalreview.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 </head>
 <body>
 <%-- 메뉴 --%>
@@ -28,23 +31,35 @@
 			</div>
 	</article>
 	<article class="first_items" id="main_info">
-		<div id="m_name">Soie SignaturePerfume</div>
-		<div id="sub_name">수아 시그니처 퍼퓸</div>
-		<div id="price">100,000 KRW</div>
-		<div id="o_btn">
-			<div id="p_btn">선물 포장</div><div id="num_btm">수량 선택</div>
+		<div id="info">
+			<p id="info_name">Soie SignaturePerfume</p>
+			<p id="info_hname">수아 시그니처 퍼퓸</p>
+			<p id="info_price">100,000 KRW</p>
 		</div>
-		<div id="sum_box">
-			<div id="sum_price">100,000 KRW</div>
-			<div id="sum_icon">X</div>
-			<div id="sum_num">2</div>
-			<div id="sum">총 상품 금액 : 200,000 KRW</div>
-		</div>
-		<div id="pick_box">
-			<div id="wish">위시</div>
-			<div id="pick">장바구니 담기</div>
-		</div>
-		<div id="sell_btn">구매하기</div>
+		<form action="">
+			<div id="p_btns">
+				<div id="p_btn">
+					<input type="checkbox" name="present">
+					<span>선물 포장</span>
+				</div>
+				<div id="num_btn">
+					<button>⟨</button>
+					<span>수량 선택</span>
+					<button>⟩</button>
+				</div>
+			</div>
+			<div id="sum_box">
+				<div id="sum_price">100,000 KRW</div>
+				<div id="sum_icon">X</div>
+				<div id="sum_num">2</div>
+				<div id="sum">총 상품 금액 : 200,000 KRW</div>
+			</div>
+			<div id="pick_box">
+				<button id="wish">♡</button>
+				<button id="pick">장바구니 담기</button>
+			</div>
+			<button id="sell_btn">구매하기</button>
+		</form>
 	</article>	
 </section>
 <%-- 상품 설명 이벤트 --%>
@@ -195,7 +210,111 @@
 		</div>
 	</article>
 </section>
-
+<section id="seven">
+	<div id="sev_img_box">
+		<img src="../testimg/sevenimg1.png">
+	</div>
+	<article id="sev_text">
+		<p>scent  Type</p>
+		<p>화이트 플로럴, 튜베로즈, 아로마틱</p>
+	</article>
+	<article>
+		<table id="sev_tab1">
+			<tr>
+				<th>TOP : </th>
+				<td>아프리칸 오렌즈 플라워, 아이리스, 아로마틱</td>
+			</tr>
+			<tr>
+				<th>MIDDLE : </th>
+				<td>튜베로즈, 핑크 페퍼</td>
+			</tr>
+			<tr>
+				<th>BASE : </th>
+				<td>머스크</td>
+			</tr>
+		</table>
+	</article>
+	<article>
+		<table id="sev_tab2">
+			<tr>
+				<th>지속력 : </th>
+				<td> 7~12시간</td>
+			</tr>
+			<tr>
+				<th>확산력 : </th>
+				<td>●●●●○</td>
+			</tr>
+		</table>
+	</article>
+</section>
+<section id="eighth">
+	<article id="re_info">
+		<p>총 리 뷰 : 4.0</p>
+		<p>★★★★☆</p>
+	</article>
+	<article id="re_btn">
+		<button>최신순</button>
+		<button>평점순</button>
+	</article>
+	<article id="t_view">
+		<div class="rev1">
+			<p>★★★★☆</p>
+			<p>아주 좋아요</p>
+			<p>2024-03-10</p>
+			<div><img src="../testimg/eighthimg1.png"></div>
+			<p>
+			배송 받고 바로 쓰지 않고 향 안정화 까지 시키고 지금 리뷰를 쓰게 되네요.
+			이번에 향에 대해 갑자기 확 꽂히고 나서 이곳에서 대량으로 향수를 구매 하였는데요. 
+			향수에 대해 1도 모르기에 자세한 리뷰는 쓰지 못하지만
+			정말 제가 산 모든 향들이 너무 조씁니다!
+			요즘 이 향 저 향 맡아보고 뿌려보며 향으로 힐링중이네요ㅎㅎ
+			정품을 비교적 저렴하게 살 수 있어서 만족이고 추후 계속 추가 구매 할 것 같습니다!
+			</p>
+		</div>
+		<div class="rev1">
+			<p>★★★★☆</p>
+			<p>아주 좋아요</p>
+			<p>2024-03-10</p>
+			<div><img src="../testimg/eighthimg1.png"></div>
+			<p>
+			배송 받고 바로 쓰지 않고 향 안정화 까지 시키고 지금 리뷰를 쓰게 되네요.
+			이번에 향에 대해 갑자기 확 꽂히고 나서 이곳에서 대량으로 향수를 구매 하였는데요. 
+			향수에 대해 1도 모르기에 자세한 리뷰는 쓰지 못하지만
+			정말 제가 산 모든 향들이 너무 조씁니다!
+			요즘 이 향 저 향 맡아보고 뿌려보며 향으로 힐링중이네요ㅎㅎ
+			정품을 비교적 저렴하게 살 수 있어서 만족이고 추후 계속 추가 구매 할 것 같습니다!
+			</p>
+		</div>
+		<div class="rev1">
+			<p>★★★★☆</p>
+			<p>아주 좋아요</p>
+			<p>2024-03-10</p>
+			<div><img src="../testimg/eighthimg1.png"></div>
+			<p>
+			배송 받고 바로 쓰지 않고 향 안정화 까지 시키고 지금 리뷰를 쓰게 되네요.
+			이번에 향에 대해 갑자기 확 꽂히고 나서 이곳에서 대량으로 향수를 구매 하였는데요. 
+			향수에 대해 1도 모르기에 자세한 리뷰는 쓰지 못하지만
+			정말 제가 산 모든 향들이 너무 조씁니다!
+			요즘 이 향 저 향 맡아보고 뿌려보며 향으로 힐링중이네요ㅎㅎ
+			정품을 비교적 저렴하게 살 수 있어서 만족이고 추후 계속 추가 구매 할 것 같습니다!
+			</p>
+		</div>
+		<div class="rev1">
+			<p>★★★★☆</p>
+			<p>아주 좋아요</p>
+			<p>2024-03-10</p>
+			<div><img src="../testimg/eighthimg1.png"></div>
+			<p>
+			배송 받고 바로 쓰지 않고 향 안정화 까지 시키고 지금 리뷰를 쓰게 되네요.
+			이번에 향에 대해 갑자기 확 꽂히고 나서 이곳에서 대량으로 향수를 구매 하였는데요. 
+			향수에 대해 1도 모르기에 자세한 리뷰는 쓰지 못하지만
+			정말 제가 산 모든 향들이 너무 조씁니다!
+			요즘 이 향 저 향 맡아보고 뿌려보며 향으로 힐링중이네요ㅎㅎ
+			정품을 비교적 저렴하게 살 수 있어서 만족이고 추후 계속 추가 구매 할 것 같습니다!
+			</p>
+		</div>
+	</article>
+</section>
 
 
 
