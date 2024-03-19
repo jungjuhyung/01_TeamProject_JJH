@@ -40,25 +40,25 @@
 			<div id="p_btns">
 				<div id="p_btn">
 					<input type="checkbox" name="present">
-					<span>선물 포장</span>
+					<p>선물 포장</p>
 				</div>
 				<div id="num_btn">
 					<button>⟨</button>
-					<span>수량 선택</span>
+					<p>수량 선택</p>
 					<button>⟩</button>
 				</div>
 			</div>
 			<div id="sum_box">
-				<div id="sum_price">100,000 KRW</div>
-				<div id="sum_icon">X</div>
-				<div id="sum_num">2</div>
-				<div id="sum">총 상품 금액 : 200,000 KRW</div>
+				<p id="sum_price">100,000 KRW</p>
+				<p id="sum_icon">X</p>
+				<p id="sum_num">2</p>
+				<p id="sum">총 상품 금액 : 200,000 KRW</p>
 			</div>
 			<div id="pick_box">
-				<button id="wish">♡</button>
+				<button id="wish"><p>♡</p></button>
 				<button id="pick">장바구니 담기</button>
+				<button id="sell_btn">구매하기</button>
 			</div>
-			<button id="sell_btn">구매하기</button>
 		</form>
 	</article>	
 </section>
