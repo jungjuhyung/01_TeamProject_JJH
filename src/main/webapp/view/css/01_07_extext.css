@@ -6,14 +6,12 @@
 	background-color : #f5f5f5;
 	width: 1000px;
 	height : 800px;
-	border: 1px solid black;
 }
 
 /* 이미지 css */
 #sev_img_box{
 	width: 250px;
 	height: 250px;
-	border: 1px solid black;
 	margin: 0 auto;
 }
 #seven img{

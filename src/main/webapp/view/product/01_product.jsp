@@ -67,27 +67,37 @@
 	<article id="sec_artbox">
 		<article id="sec_art_1">
 			<div id = "s_event01">
-				<div>+</div>
-				<div>상품 효과</div>
+				<p>+</p>
+				<p>상품 효과</p>
 			</div>
-			<div style="width: 100%;">
-				<div>장미향</div>
-				<div>500ml</div>
-				<div>대충 좋음</div>
-				<div>유통기한 : 2030/03/10</div>
+			<div>
+				<p>
+					안정되는 향을 통해
+					심신이 진정되는 효과.
+					고혹적이고 매혹적인 느낌을
+					살릴 수 있는 선택.
+					
+				</p>
+				<p>
+					휴대하기 편한 사이즈.
+					매력적인 디자인.
+					사용하기 편한 분사식.
+					오래지속되는 향
+				</p>
 			</div>
 		</article>
 		<article id="sec_art_2">
 			<div id = "s_event02">
-				<div>+</div>
-				<div>상품 정보</div>
+				<p>+</p>
+				<p>상품 정보</p>
 			</div>
-			<div style="width: 100%;">
-				<div>장미향</div>
-				<div>500ml</div>
-				<div>대충 좋음</div>
-				<div>유통기한 : 2030/03/10</div>
-			</div>
+			<ul>
+				<li>상명명 : Soie SignaturePerfume</li>
+				<li>브랜드명 : 에르메스</li>
+				<li>용량 : 500ml</li>
+				<li>기본 향 : 장미향</li>
+				<li>지속력 : 5 ~ 7시간</li>
+			</ul>
 		</article>
 	</article>
 </section>
@@ -115,44 +125,108 @@
 			<p style="border-bottom: 1px solid black;">EPEUL Perfume</p>
 			<p>80,000 KRW</p>
 		</div>
-		<div>
-			<div><img src="../testimg/projtest.png"></div>
-			<p style="border-bottom: 1px solid black;">EPEUL Perfume</p>
-			<p>80,000 KRW</p>
-		</div>
 	</article>
 </section>
 <!-- 최근 리뷰 -->
 <section id="fourth">
-	<p style="font-size: 40px; margin-bottom: 30px;">최근 리뷰</p>
+	<p>최근 리뷰</p>
 	<article id="rec_view">
-		<div>
-			<div style="float: left; width: 40%; height: 100%"><img src="../testimg/projtest.png"></div>
-			<div>☆☆☆☆</div>
-			<p>너무 좋아요</p>
-			<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+		<div class="review_box">
+			<div>
+				<img src="../testimg/projtest.png">
+			</div>
+			<div>
+				<p>★★★★☆</p>
+				<p>너무 좋아요</p>
+				<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+			</div>
 		</div>
-		<div>
-			<div style="float: left; width: 40%; height: 100%"><img src="../testimg/projtest.png"></div>
-			<div>☆☆☆☆</div>
-			<p>너무 좋아요</p>
-			<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+		<div class="review_box">
+			<div>
+				<img src="../testimg/projtest.png">
+			</div>
+			<div>
+				<p>★★★★☆</p>
+				<p>너무 좋아요</p>
+				<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+			</div>
 		</div>
-		<div>
-			<div style="float: left; width: 40%; height: 100%"><img src="../testimg/projtest.png"></div>
-			<div>☆☆☆☆</div>
-			<p>너무 좋아요</p>
-			<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+		<div class="review_box">
+			<div>
+				<img src="../testimg/projtest.png">
+			</div>
+			<div>
+				<p>★★★★☆</p>
+				<p>너무 좋아요</p>
+				<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+			</div>
 		</div>
-		<div>
-			<div style="float: left; width: 40%; height: 100%"><img src="../testimg/projtest.png"></div>
-			<div>☆☆☆☆</div>
-			<p>너무 좋아요</p>
-			<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+		<div class="review_box">
+			<div>
+				<img src="../testimg/projtest.png">
+			</div>
+			<div>
+				<p>★★★★☆</p>
+				<p>너무 좋아요</p>
+				<p>향이 너무 좋아서 자주 구매할 거 같습니다.</p>
+			</div>
 		</div>
 	</article>
 </section>
+<section id="seven">
+	<div id="sev_img_box">
+		<img src="../testimg/sevenimg1.png">
+	</div>
+	<article id="sev_text">
+		<p>scent  Type</p>
+		<p>화이트 플로럴, 튜베로즈, 아로마틱</p>
+	</article>
+	<article>
+		<table id="sev_tab1">
+			<tr>
+				<th>TOP : </th>
+				<td>아프리칸 오렌즈 플라워, 아이리스, 아로마틱</td>
+			</tr>
+			<tr>
+				<th>MIDDLE : </th>
+				<td>튜베로즈, 핑크 페퍼</td>
+			</tr>
+			<tr>
+				<th>BASE : </th>
+				<td>머스크</td>
+			</tr>
+		</table>
+	</article>
+	<article>
+		<table id="sev_tab2">
+			<tr>
+				<th>지속력 : </th>
+				<td> 7~12시간</td>
+			</tr>
+			<tr>
+				<th>확산력 : </th>
+				<td>●●●●○</td>
+			</tr>
+		</table>
+	</article>
+</section>
 <!-- 상품 상세 정보 -->
+<section id ="six">
+	<article id="simg_box">
+		<div id="simg_1"><img src="../testimg/siximg1.png"></div>
+		<div id="simg_2"><img src="../testimg/siximg2.png"></div>
+		<div class="stext_box" id="stext_box_1">
+			<p>
+				몸에 좋고 맛도 좋고 안정되는 뭔가 그런 향기
+			</p>
+		</div>
+		<div class="stext_box" id="stext_box_2">
+			<p>
+				몸에 좋고 맛도 좋고 안정되는 뭔가 그런 향기
+			</p>
+		</div>
+	</article>
+</section>
 <section id="fifth">
 	<p>상품 정보</p>
 	<table>
@@ -193,59 +267,6 @@
 			<td>02-1111-2222</td>
 		</tr>
 	</table>
-</section>
-<section id ="six">
-	<article id="simg_box">
-		<div id="simg_1"><img src="../testimg/siximg1.png"></div>
-		<div id="simg_2"><img src="../testimg/siximg2.png"></div>
-		<div class="stext_box" id="stext_box_1">
-			<p>
-				몸에 좋고 맛도 좋고 안정되는 뭔가 그런 향기
-			</p>
-		</div>
-		<div class="stext_box" id="stext_box_2">
-			<p>
-				몸에 좋고 맛도 좋고 안정되는 뭔가 그런 향기
-			</p>
-		</div>
-	</article>
-</section>
-<section id="seven">
-	<div id="sev_img_box">
-		<img src="../testimg/sevenimg1.png">
-	</div>
-	<article id="sev_text">
-		<p>scent  Type</p>
-		<p>화이트 플로럴, 튜베로즈, 아로마틱</p>
-	</article>
-	<article>
-		<table id="sev_tab1">
-			<tr>
-				<th>TOP : </th>
-				<td>아프리칸 오렌즈 플라워, 아이리스, 아로마틱</td>
-			</tr>
-			<tr>
-				<th>MIDDLE : </th>
-				<td>튜베로즈, 핑크 페퍼</td>
-			</tr>
-			<tr>
-				<th>BASE : </th>
-				<td>머스크</td>
-			</tr>
-		</table>
-	</article>
-	<article>
-		<table id="sev_tab2">
-			<tr>
-				<th>지속력 : </th>
-				<td> 7~12시간</td>
-			</tr>
-			<tr>
-				<th>확산력 : </th>
-				<td>●●●●○</td>
-			</tr>
-		</table>
-	</article>
 </section>
 <section id="eighth">
 	<article id="re_info">
@@ -315,8 +336,5 @@
 		</div>
 	</article>
 </section>
-
-
-
 </body>
 </html>

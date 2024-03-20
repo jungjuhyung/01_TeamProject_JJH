@@ -6,13 +6,11 @@
 	margin: 0 auto;
 	width: 1000px;
 	height : 1200px;
-	border: 1px solid black;
 }
 #six #simg_box{
 	width: 90%;
 	height: 1000px;
 	margin: 0 auto;
-	border: 1px solid black;
 	position: relative;
 }
 
@@ -25,7 +23,6 @@
 #six #simg_1, #simg_2{
 	width: 500px;
 	height: 550px;
-	border: 1px solid black;
 }
 #six #simg_1{
 	position: absolute;

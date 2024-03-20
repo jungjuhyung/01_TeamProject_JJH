@@ -5,18 +5,18 @@
 	background-color : #f5f5f5;
 	width: 1000px;
 	height : 650px;
-	border: 1px solid black;
 }
 #fourth #rec_view{
 	width: 90%;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	border: 1px solid black;
 	margin: 0 auto;
 }
 #fourth > p{
   text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
   font-weight: bold;
 }
 #fourth img{
@@ -24,10 +24,31 @@
 	height: 100%;
 	object-fit : contain;	
 }
-#fourth #rec_view > div{
-	border: 1px solid black;
-	margin: 10px;
+.review_box{
+	display: flex;
+	padding : 10px;
 	width: 45%;
-	height: 200px;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	border-bottom: 1px solid black;
+	
 }
-
+.review_box div:nth-of-type(1) {
+	width: 30%;
+}
+.review_box div:nth-of-type(2) {
+	width: 50%;
+}
+.review_box div:nth-of-type(2) p:nth-of-type(1) {
+	font-size: 20px;
+}
+.review_box div:nth-of-type(2) p:nth-of-type(2) {
+	font-size: 17px;
+	margin-top: 10px;
+	font-weight: bold;
+}
+.review_box div:nth-of-type(2) p:nth-of-type(3) {
+	font-size: 17px;
+	margin-top: 10px;
+	height: 50%;
+}
