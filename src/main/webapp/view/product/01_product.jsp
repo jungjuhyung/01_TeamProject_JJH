@@ -15,6 +15,8 @@
 <link href="../css/01_07_extext.css" rel="stylesheet">
 <link href="../css/01_08_totalreview.css" rel="stylesheet">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+</script>
 </head>
 <body>
 <%-- 메뉴 --%>
