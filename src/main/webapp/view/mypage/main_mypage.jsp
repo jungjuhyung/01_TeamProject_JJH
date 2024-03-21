@@ -13,7 +13,7 @@
 	<section id="first">
 		<article id="f_profile">
 			<div id="pro_icon">
-				<div><img alt="" src=""></div>
+				<div><img src="../testimg/profile.png"></div>
 				<p>닉네임</p>
 				<p>라면먹는중</p>
 			</div>
@@ -27,20 +27,20 @@
 		<article id="f_info">
 			<div id="info_pro">
 				<p>프로필</p>
-				<div>
-					<span>아이콘1</span>
+				<div class="infos">
+					<p>아이콘1</p>
 					<p>이름 : 아무개</p>
 				</div>
-				<div>
-					<span>아이콘2</span>
+				<div class="infos">
+					<p>아이콘2</p>
 					<p>번호 : 010-8888-8888</p>
 				</div>
-				<div>
-					<span>아이콘3</span>
+				<div class="infos">
+					<p>아이콘3</p>
 					<p>이메일 : ww1234@naver.com</p>
 				</div>
-				<div>
-					<span>아이콘4</span>
+				<div class="infos">
+					<p>아이콘4</p>
 					<p>주소 : 서울특별시 마포구</p>
 				</div>
 			</div>
@@ -58,7 +58,7 @@
 			<div id="info_qna">
 				<p>QnA 문의 결과</p>
 				<div>
-					<p>환불하고 싶어요</p>
+					<p>환불 요청</p>
 					<p>답변 완료</p>
 				</div>
 				<div>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <link href="../css/reset.css" rel="stylesheet">
-<link href="../css/04_01_list.css" rel="stylesheet">
+<link href="../css/04_01_buylist.css" rel="stylesheet">
 <meta charset="UTF-8">
 <title>Insert title here</title>
 </head>
@@ -20,15 +20,17 @@
 					<p>Soie SignaturePerfume</p>
 					<div>
 						<input type="checkbox">
-						<span>선물포장</span>
+						<p>선물포장</p>
 					</div>
 					<div>
 						<button>⟨</button>
-						<span>수량선택</span>
+						<p>수량선택</p>
 						<button>⟩</button>
 					</div>
 				</div>
-				<div><p>100,000KRW</p></div>
+				<div>
+					<p>100,000KRW</p>
+				</div>
 			</div>
 			<div class="f_items">
 				<input type="checkbox">
@@ -39,15 +41,17 @@
 					<p>Soie SignaturePerfume</p>
 					<div>
 						<input type="checkbox">
-						<span>선물포장</span>
+						<p>선물포장</p>
 					</div>
 					<div>
 						<button>⟨</button>
-						<span>수량선택</span>
+						<p>수량선택</p>
 						<button>⟩</button>
 					</div>
 				</div>
-				<div>100,000KRW</div>
+				<div>
+					<p>100,000KRW</p>
+				</div>
 			</div>
 			<div class="f_items">
 				<input type="checkbox">
@@ -58,23 +62,22 @@
 					<p>Soie SignaturePerfume</p>
 					<div>
 						<input type="checkbox">
-						<span>선물포장</span>
+						<p>선물포장</p>
 					</div>
 					<div>
 						<button>⟨</button>
-						<span>수량선택</span>
+						<p>수량선택</p>
 						<button>⟩</button>
 					</div>
 				</div>
-				<div>100,000KRW</div>
+				<div>
+					<p>100,000KRW</p>
+				</div>
 			</div>
 		<article id="f_sum">
 			<div>
-				<p>100,000 KRW + 3,000KRW</p>
-				<p>총 상품 금액 : 300,000KRW</p>
-			</div>
-			<div>
-				<button>구매하기</button>
+				<p>100,000 KRW + 3,000KRW = 303,000KRW</p>
+				<input type="button" value="구매하기">
 			</div>
 		
 		</article>
