@@ -13,6 +13,41 @@
 	height: 610px;
 	margin: 0 auto;
 }
+
+#buymenu{
+	display: flex;
+	width: 750px;
+	border: none;
+	border-bottom: 1px solid black;
+	align-items: center;
+	justify-content: space-around;
+	margin: 0 auto;
+	padding-bottom: 10px;
+}
+#buymenu div{
+	width: 155px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+}
+#buymenu input{
+	width: 20px;
+	height: 20px;
+}
+#buymenu div > p{
+	width: 110px;
+	height: 20px;
+}
+#buymenu > p:nth-of-type(1){
+	width: 400px;
+	text-align: center;
+}
+#buymenu > p:nth-of-type(2){
+	width: 180px;
+	text-align: center;
+}
+
 .f_items{
 	width: 750px;
 	height: 170px;
@@ -22,6 +57,10 @@
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+}
+.f_items > input{
+	width: 20px;
+	height: 20px;
 }
 .f_img{
 	width: 135px;
@@ -44,37 +83,36 @@
 	border-left: 1px solid black;
 }
 .f_option > p{
-	width: 100%;
-	font-size: 20px;
+	display: block;
+	width: 40%;
+	font-size: 18px;
 	font-weight: bold;
 	text-align: center;
+	text-overflow : ellipsis;
+	overflow: hidden;
 }
 .f_option div{
 	display: flex;
+	flex-wrap: wrap;
 	align-items: center;
 }
-.f_option > div:nth-of-type(1) input{
-	width: 20px;
-	height: 20px;
-}
-.f_option > div:nth-of-type(1) p{
-	margin-left: 10px;
-	font-weight: bold;
-	font-size: 16px;
+.f_option > div:nth-of-type(1){
+	width: 27%;
 	
 }
-.f_option > div:nth-of-type(2) button{
-	background-color: transparent;
-	border: none;
-	font-weight : bold;
-	width: 20px;
-	height: 20px;
+.f_option > div:nth-of-type(1) p{
+	font-size: 12px;
+	text-align : center;
+	
+}
+.f_option > div:nth-of-type(2){
+	width: 27%
 }
 .f_option > div:nth-of-type(2) p{
-	font-weight: bold;
+	font-size: 12px;
 	text-align : center;
-	width: 65px;
 }
+
 .f_items > div:nth-of-type(3){
 	width: 180px;
 	height: 135px;
@@ -87,10 +125,6 @@
 	font-size: 20px;
 	font-weight: bold;
 	text-align: center;
-}
-.f_items > input{
-	width: 20px;
-	height: 20px;
 }
 
 /* 계산 박스 css */
