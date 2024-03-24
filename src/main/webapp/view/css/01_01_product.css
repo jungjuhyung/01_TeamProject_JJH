@@ -58,24 +58,27 @@ body{
 	margin-top: 10px;
 }
 /* 메인-2 정보 article */
-#info{
+#first #info{
 	margin-top: 20px;
 }
-#info p:nth-of-type(1){
+#first #info p:nth-of-type(1){
 	font-size: 25px;
 	margin-bottom: 10px;
 }
-#info p:nth-of-type(2){
+#first #info p:nth-of-type(2){
 	font-size: 20px;
 	margin-bottom: 10px;
 }
-#info p:nth-of-type(3){
+#first #info p:nth-of-type(3){
 	font-size: 20px;
 	margin-bottom: 10px;
+}
+#first #info p:nth-of-type(3) span{
+	font-size: 20px;
 }
 
 /* 옵션 버튼 css */
-#p_btns{
+#first #p_btns{
 	width: 100%;
 	margin-top: 40px;
 	margin-bottom: 40px;
@@ -83,29 +86,29 @@ body{
 	justify-content: space-around;
 	
 }
-#p_btn{
+#first #p_btn{
 	display: flex;
 	align-items: center;
 }
-#p_btn p{
+#first #p_btn p{
 	font-size: 16px;
 }
-#p_btn input{
+#first #p_btn input{
 	width: 20px;
 	height: 20px;
 	margin-right: 10px;
 }
-#num_btn{
+#first #num_btn{
 	width: 40%;
 	display: flex;
 	align-items: center;
 }
-#num_btn p{
+#first #num_btn p{
 	width: 80px;
 	font-size: 16px;
 	text-align: center;
 }
-#num_btn button{
+#first #num_btn button{
 	background-color: transparent;
 	border: 0px solid black;
 	font-size: 20px;
@@ -114,7 +117,7 @@ body{
 }
 
 /* 연산 블록 css */
-#sum_box{
+#first #sum_box{
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
@@ -123,35 +126,38 @@ body{
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
-#sum_box p:nth-of-type(1){
+#first #sum_box p:nth-of-type(1){
 	width: 25%;
 	font-size: 15px;
 	text-align: center;
 }
-#sum_box p:nth-of-type(2){
+#first #sum_box p:nth-of-type(2){
 	width: 30%;
 	font-size: 15px;
 	text-align: center;
 }
-#sum_box p:nth-of-type(3){
+#first #sum_box p:nth-of-type(3){
 	width: 30%;
 	font-size: 15px;
 	text-align: center;
 }
-#sum_box p:nth-of-type(4){
+#first #sum_box p:nth-of-type(4){
 	width: 100%;
 	margin-top: 20px;
 	font-size: 20px;
 	text-align: center;
 }
+#first #sum_box p:nth-of-type(4) span{
+	font-size: 20px;
+}
 
 /* 구매버튼 css */
-#pick_box{
+#first #pick_box{
 	display: flex;
 	flex-wrap: wrap;
 	margin-top: 30px;
 }
-#pick_box button:nth-of-type(1) {
+#first #pick_box button:nth-of-type(1) {
 	width: 50px;
 	height: 50px;
 	text-align: center;
@@ -161,7 +167,10 @@ body{
 	background-color: transparent;
 	border: none;
 }
-#pick_box button:nth-of-type(2) {
+#first #pick_box button:nth-of-type(1) span{
+	font-size: 40px;
+}
+#first #pick_box button:nth-of-type(2) {
 	width: 300px;
 	height: 50px;
 	text-align: center;
@@ -170,7 +179,7 @@ body{
 	margin: 0px 20px 0 20px;
 	background-color: transparent;
 }
-#pick_box button:nth-of-type(3) {
+#first #pick_box button:nth-of-type(3) {
 	width: 100%;
 	height: 50px;
 	text-align: center;

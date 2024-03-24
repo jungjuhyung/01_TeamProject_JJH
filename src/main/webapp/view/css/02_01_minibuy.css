@@ -1,21 +1,58 @@
 @charset "UTF-8";
+/* 빠른 구매 버튼 이벤트 */
+#mini_btn{
+	width: 150px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	position: sticky;
+	top: 85%;
+	left: 85%;
+	z-index: 500;
+}
+#mini_btn > div:nth-of-type(1){
+	width: 33%;
+	height: 100%;
+}
+#mini_btn > div:nth-of-type(1) img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+#mini_btn > div:nth-of-type(2){
+	width: 67%;
+	height: 100%;
+	background-color: #bfbfbf;
+	display: flex;
+	align-items: center;
+}
+#mini_btn > div:nth-of-type(2) p{
+	width: 100%;
+	font-size: 17px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* 빠른 구매 창 */
 #mini{
 	width: 350px;
 	height: 500px;
-	margin: 0 auto;
-}
-#mini #fir_art{
-	width: 100%;
-	height: 100%;
 	padding: 10px;
 	background-color: #949191;
-}
-#mini #mini_form{
+	position:  absolute;
+	right: 0;
+	bottom: 0;
+	right: 10%;
+	z-index: 999;
+	display: none;
+	}
+#mini > article{
 	width: 100%;
 	height: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
+	
 }
 #mini img{
 	width: 100%;
@@ -45,6 +82,10 @@
 	text-align: center;
 	margin-top: 15px;
 	
+}
+#mini #mini_info p:nth-of-type(2) span{
+	font-weight: bold;
+	font-size: 15px;	
 }
 
 #mini #p_btn{
@@ -81,10 +122,13 @@
 	font-weight: bold;
 }
 #mini #num_btn p{
+	width: 70px;
+	text-align: center;
 	font-weight: bold;
 }
 #mini #sum_box{
 	display: flex;
+	width: 100%;
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
@@ -94,7 +138,7 @@
 	margin-top: 40px;
 }
 #mini #sum_box p:nth-of-type(1){
-	width: 30%;
+	width: 35%;
 	font-size: 16px;
 	text-align: center;
 }
@@ -104,7 +148,7 @@
 	text-align: center;
 }
 #mini #sum_box p:nth-of-type(3){
-	width: 30%;
+	width: 35%;
 	font-size: 16px;
 	text-align: center;
 }
@@ -114,10 +158,19 @@
 	font-size: 20px;
 	text-align: center;
 }
-#mini #pick_box{
+#mini #sum_box p:nth-of-type(4) span{
+	font-size: 20px;
+}
+
+#mini_form{
+	display: block;
 	width: 100%;
 	height: 60px;
 	margin-top: 40px;
+}
+#mini #pick_box{
+	width: 100%;
+	height: 100%;
 	display: flex;
 	justify-content: center;
 }
@@ -126,8 +179,9 @@
 	height: 60px;
 	background-color: transparent;
 	border: 0px solid black;
+}
+#mini #pick_box button:nth-of-type(1) span {
 	font-size: 40px;
-	font-weight: bold;
 }
 
 #mini #pick_box button:nth-of-type(2) {

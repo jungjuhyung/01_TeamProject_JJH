@@ -28,11 +28,13 @@
 	position: absolute;
 	top: 0px;
 	right: 0px;
+	z-index: 40;
 }
 #six #simg_2{
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
+	z-index: 40;
 }
 
 /* 텍스트 박스 css */
@@ -51,6 +53,7 @@
 	position: absolute;
 	top: 0px;
 	left: 0px;
+	z-index: 40;
 }
 #six #stext_box_2{
 	width: 400px;
@@ -58,4 +61,5 @@
 	position: absolute;
 	bottom: 0px;
 	right: 0px;
+	z-index: 40;
 }

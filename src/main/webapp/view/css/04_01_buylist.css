@@ -9,14 +9,20 @@
 }
 
 #f_list{
-	width: 820px;
+	width: 62%;
 	height: 610px;
 	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	align-content: center;
+	overflow: auto;
+	
 }
 
 #buymenu{
 	display: flex;
-	width: 750px;
+	width: 59%;
 	border: none;
 	border-bottom: 1px solid black;
 	align-items: center;
@@ -25,7 +31,7 @@
 	padding-bottom: 10px;
 }
 #buymenu div{
-	width: 155px;
+	width: 20%;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -40,16 +46,16 @@
 	height: 20px;
 }
 #buymenu > p:nth-of-type(1){
-	width: 400px;
+	width: 50%;
 	text-align: center;
 }
 #buymenu > p:nth-of-type(2){
-	width: 180px;
+	width: 25%;
 	text-align: center;
 }
 
 .f_items{
-	width: 750px;
+	width: 95%;
 	height: 170px;
 	border: none;
 	border-bottom: 1px solid black;
@@ -63,7 +69,7 @@
 	height: 20px;
 }
 .f_img{
-	width: 135px;
+	width: 15%;
 	height: 135px;
 }
 #first img{
@@ -73,12 +79,13 @@
 }
 
 .f_option{
-	width: 400px;
+	width: 50%;
 	height: 135px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
 	align-items: center;
+	align-content: center;
 	border-right: 1px solid black;
 	border-left: 1px solid black;
 }
@@ -90,31 +97,50 @@
 	text-align: center;
 	text-overflow : ellipsis;
 	overflow: hidden;
+	white-space: nowrap;
+	margin-right: 7px;
+	margin-left: 7px;
 }
 .f_option div{
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
+	justify-content: center;
 }
 .f_option > div:nth-of-type(1){
 	width: 27%;
-	
+}
+.f_option > div:nth-of-type(1) select{
+	background-color: transparent;
+	border-bottom: none;
+	border-top: none;
 }
 .f_option > div:nth-of-type(1) p{
+	width: 100%;
 	font-size: 12px;
+	font-weight: bold;
 	text-align : center;
+	margin-bottom: 10px;
 	
 }
 .f_option > div:nth-of-type(2){
 	width: 27%
 }
 .f_option > div:nth-of-type(2) p{
+	width: 100%;
 	font-size: 12px;
+	font-weight: bold;
 	text-align : center;
+	margin-bottom: 10px;
+}
+.f_option > div:nth-of-type(2) select{
+	background-color: transparent;
+	border-bottom: none;
+	border-top: none;
 }
 
 .f_items > div:nth-of-type(3){
-	width: 180px;
+	width: 20%;
 	height: 135px;
 	display: flex;
 	align-items: center;
@@ -126,36 +152,50 @@
 	font-weight: bold;
 	text-align: center;
 }
+.f_items > button{
+	width: 5%;
+	height: 135px;
+	background-color: transparent;
+	border: none;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
 
 /* 계산 박스 css */
 #f_sum{
-	width: 620px;
-	height: 120px;
+	width: 62%;
+	height: 150px;
 	margin: 50px auto 0;
-	display: flex;
 	
 }
-#f_sum div:nth-of-type(1) {
-	width: 75%;
+#f_sum > div {
+	width: 55%;
+	height: 100px;
 	display: flex;
 	flex-wrap: wrap;
 	align-content: center;
+	margin: 0 auto;
 	border-left: 1px solid black;
+	border-right: 1px solid black;
+	
 }
-#f_sum div:nth-of-type(1) p:nth-of-type(1) {
+#f_sum > div p {
 	width: 100%;
 	font-size: 17px;
 	font-weight: bold;
 	text-align: center;
-	margin-bottom: 10px;
+	margin-bottom: 7px;
+	border: none;
+}
+#f_sum > div hr {
+	width: 90%;
+
 }
 
 #f_sum input {
 	width: 100%;
-	font-size: 25px;
-	font-weight: bold;
-	margin: 0 auto;
 	background-color: transparent;
 	border: none;
-	padding: 0 10px 0 10px;
+	font-size: 25px;
+	font-weight: bold;
 }

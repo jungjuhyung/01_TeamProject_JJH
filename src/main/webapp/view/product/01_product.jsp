@@ -1,10 +1,13 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 <link href="../css/reset.css" rel="stylesheet">
 <link href="../css/01_01_product.css" rel="stylesheet">
 <link href="../css/01_02_exevent.css" rel="stylesheet">
@@ -14,9 +17,10 @@
 <link href="../css/01_06_eximg.css" rel="stylesheet">
 <link href="../css/01_07_extext.css" rel="stylesheet">
 <link href="../css/01_08_totalreview.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-<script type="text/javascript">
-</script>
+<link href="../css/02_01_minibuy.css" rel="stylesheet">
+
+<!-- 이모티콘 -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
 <%-- 메뉴 --%>
@@ -24,21 +28,21 @@
 </header>
 <%-- 1. 상품 메인 소개 --%>
 <section id="first">
+	<c:set var="su" value="200000"/>
 	<article class="first_items" id="main_img_box">
 			<div id="m_img"><img id="t1" src="../testimg/projtest.png"></div>
 			<div id="sub_imgs">
 				<div class="sub_img"><img src="../testimg/projtest.png"></div>
-				<div class="sub_img"><img src="../testimg/projtest.png"></div>
-				<div class="sub_img"><img src="../testimg/projtest.png"></div>
+				<div class="sub_img"><img src="../testimg/sevenimg1.png"></div>
+				<div class="sub_img"><img src="../testimg/siximg1.png"></div>
 			</div>
 	</article>
 	<article class="first_items" id="main_info">
 		<div id="info">
 			<p id="info_name">Soie SignaturePerfume</p>
 			<p id="info_hname">수아 시그니처 퍼퓸</p>
-			<p id="info_price">100,000 KRW</p>
+			<p id="info_price"><span><fmt:formatNumber value="${su}"/></span> KRW</p>
 		</div>
-		<form action="">
 			<div id="p_btns">
 				<div id="p_btn">
 					<input type="checkbox" name="present">
@@ -51,13 +55,18 @@
 				</div>
 			</div>
 			<div id="sum_box">
-				<p id="sum_price">100,000 KRW</p>
+				<p id="sum_price"><span><fmt:formatNumber value="${su}"/></span> KRW</p>
 				<p id="sum_icon">X</p>
-				<p id="sum_num">2</p>
-				<p id="sum">총 상품 금액 : 200,000 KRW</p>
+				<p id="sum_num">0</p>
+				<p id="sum">총 상품 금액 : <span>0</span> KRW</p>
 			</div>
+		<form action="">
 			<div id="pick_box">
-				<button id="wish"><p>♡</p></button>
+				<button id="wish">
+					<span class="material-symbols-outlined">
+					favorite
+					</span>
+				</button>
 				<button id="pick">장바구니 담기</button>
 				<button id="sell_btn">구매하기</button>
 			</div>
@@ -129,6 +138,51 @@
 		</div>
 	</article>
 </section>
+	<!-- 빠른 구매 이벤트 버튼-->
+<div id="mini_btn">
+	<div><img src="../testimg/projtest.png"></div>
+	<div><p>빠른구매</p></div>	
+<!-- 빠른 구매 창 -->
+<section id="mini">
+	<article>
+			<div id="mini_img">
+				<img src="../testimg/projtest.png">
+			</div>
+			<div id="mini_btns">
+				<div id="mini_info">
+					<p>Soie SignaturePerfume</p>
+					<p><span><fmt:formatNumber value="${su}"/></span> KRW</p>
+				</div>
+				<div id="p_btn">
+					<input type="checkbox" name="present">
+					<p>선물 포장</p>
+				</div>
+				<div id="num_btn">
+					<button>⟨</button>
+					<p>수량 선택</p>
+					<button>⟩</button>
+				</div>
+			</div>
+			<div id="sum_box">
+				<p><span><fmt:formatNumber value="${su}"/></span> KRW</p>
+				<p>X</p>
+				<p>수량 선택</p>
+				<p>총 상품 금액 : <span>200,000</span> KRW</p>
+			</div>
+		<form action="" id="mini_form">
+			<div id="pick_box">
+				<button>
+					<span class="material-symbols-outlined">
+						favorite
+					</span>
+				</button>
+				<button>장바구니 담기</button>
+				<button>구매하기</button>
+			</div>
+		</form>
+	</article>
+</section>
+</div>
 <!-- 최근 리뷰 -->
 <section id="fourth">
 	<p>최근 리뷰</p>
@@ -338,5 +392,96 @@
 		</div>
 	</article>
 </section>
+<script type="text/javascript">
+		/* 빠른 구매 버튼 */
+		$("#mini_btn").on("click", function() {
+			$("#mini").fadeIn(600, function() {
+				$("#mini").css("display","block");
+			});
+		});
+		$("#mini").on("mouseleave", function() {
+			$("#mini").fadeOut(600, function() {
+				$("#mini").css("display","none");
+			});
+		});
+		
+		/* 간편 설명 슬라이드 이벤트 */
+		$("#s_event01").click(function() {
+			$("#sec_art_1 > div:nth-of-type(2)").slideToggle(600)
+		});
+		$("#s_event02").click(function() {
+			$("#sec_art_2 > ul").slideToggle(600)
+		});
+		
+		/* 수량 버튼 이벤트 및 계산 이벤트 */
+		$("#first #num_btn > button:nth-of-type(1)").click(function() {
+			if ($("#first #num_btn > p").text()=="수량 선택") {
+				$("#first #num_btn > p").text("수량 선택");
+			}else {
+				let k = parseInt($("#first #num_btn > p").text())-1;
+				if (k==0) {
+					k = "수량 선택";
+				}
+				$("#first #num_btn > p").text(k);
+			}
+			$("#first #sum_box p:nth-of-type(3)").text($("#first #num_btn > p").text());
+			let k = ($("#first #num_btn > p").text()*${su}).toLocaleString("ko-KR")
+			if (k=="NaN") {
+				k = 0
+			}
+			$("#first #sum_box p:nth-of-type(4) span").text(k);
+		});
+		$("#first #num_btn >button:nth-of-type(2)").click(function() {
+			if ($("#first #num_btn > p").text()=="수량 선택") {
+				$("#first #num_btn > p").text("1");
+			}else {
+				$("#first #num_btn > p").text(parseInt($("#first #num_btn > p").text())+1)
+			};
+			$("#first #sum_box p:nth-of-type(3)").text($("#first #num_btn > p").text());
+			$("#first #sum_box p:nth-of-type(4) span").text(($("#first #num_btn > p").text()*${su}).toLocaleString("ko-KR"))
+		});
+		
+		/* 바로구매 수량 버튼 이벤트 및 계산 이벤트 */
+		$("#mini #num_btn > button:nth-of-type(1)").click(function() {
+			if ($("#mini #num_btn > p").text()=="수량 선택") {
+				$("#mini #num_btn > p").text("수량 선택");
+			}else {
+				let k = parseInt($("#mini #num_btn > p").text())-1;
+				if (k==0) {
+					k = "수량 선택";
+				}
+				$("#mini #num_btn > p").text(k);
+			}
+			$("#mini #sum_box p:nth-of-type(3)").text($("#mini #num_btn > p").text());
+			let k = ($("#mini #num_btn > p").text()*${su}).toLocaleString("ko-KR")
+			if (k=="NaN") {
+				k = 0
+			}
+			$("#mini #sum_box p:nth-of-type(4) span").text(k);
+		});
+		$("#mini #num_btn >button:nth-of-type(2)").click(function() {
+			if ($("#mini #num_btn > p").text()=="수량 선택") {
+				$("#mini #num_btn > p").text("1");
+			}else {
+				$("#mini #num_btn > p").text(parseInt($("#mini #num_btn > p").text())+1)
+			};
+			$("#mini #sum_box p:nth-of-type(3)").text($("#mini #num_btn > p").text());
+			$("#mini #sum_box p:nth-of-type(4) span").text(($("#mini #num_btn > p").text()*${su}).toLocaleString("ko-KR"))
+		});
+		
+		/* 이미지 변경 이벤트 */
+		$(".sub_img:nth-of-type(1)").click(function() {
+			let k = $(".sub_img:nth-of-type(1) img").attr("src");
+			$("#t1").attr("src", k)
+		});
+		$(".sub_img:nth-of-type(2)").click(function() {
+			let k = $(".sub_img:nth-of-type(2) img").attr("src");
+			$("#t1").attr("src", k)
+		});
+		$(".sub_img:nth-of-type(3)").click(function() {
+			let k = $(".sub_img:nth-of-type(3) img").attr("src");
+			$("#t1").attr("src", k)
+		});
+</script>
 </body>
 </html>

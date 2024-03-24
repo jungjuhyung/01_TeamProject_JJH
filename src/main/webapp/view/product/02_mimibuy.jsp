@@ -1,5 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,8 +9,16 @@
 <title>Insert title here</title>
 <link href="../css/reset.css" rel="stylesheet">
 <link href="../css/02_01_minibuy.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script type="text/javascript">
+$(function() {
+	$("#body").on("click", function() {
+		$("#mini").fadeOut(600);
+	});
+});
+</script>
 </head>
-<body>
+<body id="body">
 	<section id="mini">
 		<article id="fir_art">
 			<form action="" id="mini_form">
